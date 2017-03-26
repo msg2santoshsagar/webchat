@@ -46,7 +46,7 @@
                 }
             });
             $rootScope.$on('$destroy', function () {
-                if(angular.isDefined(stateChangeStart) && stateChangeStart !== null){
+            	if(angular.isDefined(stateChangeStart) && stateChangeStart !== null){
                     stateChangeStart();
                 }
             });
